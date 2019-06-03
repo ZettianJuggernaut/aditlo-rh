@@ -1,0 +1,230 @@
+
+skeleton.png
+size: 256,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+RHart, CharPiece, FrontShadow copy
+  rotate: false
+  xy: 2, 19
+  size: 31, 43
+  orig: 31, 43
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, BackArmLeftHold
+  rotate: false
+  xy: 243, 53
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, CharPiece, JohnBase, BackArmRightHold
+  rotate: false
+  xy: 243, 42
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, CharPiece, JohnBase, BackBody
+  rotate: false
+  xy: 2, 2
+  size: 19, 15
+  orig: 19, 15
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, BackFootLeft
+  rotate: true
+  xy: 35, 26
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, BackFootRight
+  rotate: true
+  xy: 107, 17
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, BackHead
+  rotate: false
+  xy: 105, 36
+  size: 33, 26
+  orig: 33, 26
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, BackArmLeftHold
+  rotate: false
+  xy: 243, 31
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, CharPiece, RobinBase, BackArmRightHold
+  rotate: true
+  xy: 44, 2
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, CharPiece, RobinBase, BackBody
+  rotate: false
+  xy: 23, 2
+  size: 19, 15
+  orig: 19, 15
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, BackFootLeft
+  rotate: false
+  xy: 146, 27
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, BackFootRight
+  rotate: true
+  xy: 116, 17
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, BackHat
+  rotate: false
+  xy: 210, 36
+  size: 31, 26
+  orig: 31, 26
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, BackHead
+  rotate: false
+  xy: 140, 36
+  size: 33, 26
+  orig: 33, 26
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Bandit, BackArmLeftHold
+  rotate: true
+  xy: 55, 2
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, Bandit, BackArmRightHold
+  rotate: true
+  xy: 66, 2
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, Bandit, BackBody
+  rotate: false
+  xy: 86, 17
+  size: 19, 15
+  orig: 19, 17
+  offset: 0, 2
+  index: -1
+RHart, EnemyPiece, Bandit, BackFootLeft
+  rotate: false
+  xy: 154, 27
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Bandit, BackFootRight
+  rotate: true
+  xy: 125, 17
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Bandit, BackHead2
+  rotate: false
+  xy: 175, 36
+  size: 33, 26
+  orig: 33, 29
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, MadMan, BackArmLeftHold
+  rotate: true
+  xy: 77, 2
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, MadMan, BackArmRightHold
+  rotate: false
+  xy: 107, 25
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, MadMan, BackBody
+  rotate: false
+  xy: 44, 15
+  size: 19, 17
+  orig: 19, 17
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, MadMan, BackFootLeft
+  rotate: false
+  xy: 162, 27
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, MadMan, BackFootRight
+  rotate: true
+  xy: 134, 17
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, MadMan, BackHead
+  rotate: false
+  xy: 35, 34
+  size: 33, 28
+  orig: 33, 29
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, Savage, BackArmLeftHold
+  rotate: false
+  xy: 120, 25
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, Savage, BackArmRightHold
+  rotate: false
+  xy: 133, 25
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, Savage, BackBody
+  rotate: false
+  xy: 65, 15
+  size: 19, 17
+  orig: 19, 17
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Savage, BackFootLeft
+  rotate: false
+  xy: 170, 27
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Savage, BackFootRight
+  rotate: false
+  xy: 178, 27
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Savage, BackHead
+  rotate: false
+  xy: 70, 34
+  size: 33, 28
+  orig: 33, 29
+  offset: 0, 1
+  index: -1
