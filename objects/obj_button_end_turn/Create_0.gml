@@ -1,0 +1,2 @@
+/// @description
+text = "Skip Turn";

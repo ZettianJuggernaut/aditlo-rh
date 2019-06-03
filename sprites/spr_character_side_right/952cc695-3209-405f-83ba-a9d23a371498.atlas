@@ -1,0 +1,209 @@
+
+skeleton.png
+size: 512,32
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+RHart, CharPiece, JohnBase, SideArmDark
+  rotate: false
+  xy: 320, 16
+  size: 7, 12
+  orig: 7, 12
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, SideArmLight
+  rotate: false
+  xy: 329, 16
+  size: 7, 12
+  orig: 7, 12
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, SideBody
+  rotate: false
+  xy: 263, 11
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, SideFootLight
+  rotate: false
+  xy: 192, 5
+  size: 6, 4
+  orig: 6, 4
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, SideHead
+  rotate: false
+  xy: 136, 5
+  size: 26, 23
+  orig: 26, 23
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, SideArmDark
+  rotate: false
+  xy: 338, 16
+  size: 7, 12
+  orig: 7, 12
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, SideArmLight
+  rotate: false
+  xy: 347, 16
+  size: 7, 12
+  orig: 7, 12
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, SideBody
+  rotate: false
+  xy: 282, 11
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, SideFootDark
+  rotate: false
+  xy: 410, 24
+  size: 6, 4
+  orig: 6, 4
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, SideFootLight
+  rotate: false
+  xy: 200, 5
+  size: 6, 4
+  orig: 6, 4
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, SideHat
+  rotate: false
+  xy: 192, 11
+  size: 29, 17
+  orig: 29, 17
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, SideHead
+  rotate: false
+  xy: 164, 5
+  size: 26, 23
+  orig: 26, 23
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, SideShadow
+  rotate: true
+  xy: 2, 4
+  size: 24, 46
+  orig: 24, 46
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Bandit, SideArmDark
+  rotate: false
+  xy: 356, 16
+  size: 7, 12
+  orig: 7, 12
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Bandit, SideArmLight
+  rotate: false
+  xy: 365, 16
+  size: 7, 12
+  orig: 7, 12
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Bandit, SideBody
+  rotate: false
+  xy: 301, 11
+  size: 17, 17
+  orig: 17, 18
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, Bandit, SideHead
+  rotate: false
+  xy: 108, 2
+  size: 26, 26
+  orig: 27, 30
+  offset: 1, 2
+  index: -1
+RHart, EnemyPiece, MadMan, SideArmDark
+  rotate: false
+  xy: 374, 16
+  size: 7, 12
+  orig: 7, 12
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, MadMan, SideArmLight
+  rotate: false
+  xy: 383, 16
+  size: 7, 12
+  orig: 7, 12
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, MadMan, SideBody
+  rotate: true
+  xy: 223, 11
+  size: 17, 18
+  orig: 17, 18
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, MadMan, SideFootDark
+  rotate: false
+  xy: 410, 18
+  size: 6, 4
+  orig: 6, 4
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, MadMan, SideFootLight
+  rotate: false
+  xy: 418, 24
+  size: 6, 4
+  orig: 6, 4
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, MadMan, SideHead
+  rotate: false
+  xy: 50, 2
+  size: 27, 26
+  orig: 27, 30
+  offset: 0, 4
+  index: -1
+RHart, EnemyPiece, Savage, SideArmDark
+  rotate: false
+  xy: 392, 16
+  size: 7, 12
+  orig: 7, 12
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Savage, SideArmLight
+  rotate: false
+  xy: 401, 16
+  size: 7, 12
+  orig: 7, 12
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Savage, SideBody
+  rotate: true
+  xy: 243, 11
+  size: 17, 18
+  orig: 17, 18
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Savage, SideFootDark
+  rotate: false
+  xy: 208, 5
+  size: 6, 4
+  orig: 6, 4
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Savage, SideFootLight
+  rotate: false
+  xy: 418, 18
+  size: 6, 4
+  orig: 6, 4
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Savage, SideHead
+  rotate: false
+  xy: 79, 2
+  size: 27, 26
+  orig: 27, 30
+  offset: 0, 4
+  index: -1
