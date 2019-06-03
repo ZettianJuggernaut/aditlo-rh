@@ -1,2 +1,0 @@
-/// @description
-text = "Skip Turn";
