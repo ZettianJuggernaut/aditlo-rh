@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 type = async_load[? "type"];
-switch(type)
-{
+switch(type) {
 	case(network_type_data):
 		switch(global.current_menu)
 		{
@@ -57,7 +55,7 @@ switch(type)
 			break;
 			case("char_select"):
 				var buff = async_load[? "buffer"];
-				global.p1_playing = buffer_read(buff,buffer_u8);
+				//global.p1_playing = buffer_read(buff,buffer_u8);
 				room_restart();
 			break;
 			case(""):
@@ -66,16 +64,13 @@ switch(type)
 			break;
 		}
 	break;
-=======
+
 type = async_load[? "type"];
-switch(type)
-{
+switch(type) {
 	case(network_type_data):
-		switch(global.current_menu)
-		{
+		switch(global.current_menu) {
 			case("offline_lobby"):
-				if(connected)
-				{
+				if(connected) {
 					var buff = async_load[? "buffer"],
 					goto_room = buffer_read(buff,buffer_u16),
 					seed = buffer_read(buff,buffer_u32),
@@ -84,18 +79,15 @@ switch(type)
 					arg2 = ds_list_create(),
 					arg3 = ds_list_create(),
 					index = 0;
-					repeat(10)
-					{
+					repeat(10) {
 						arg1[| index++] = buffer_read(buff,buffer_u8);
 					}
 					index = 0;
-					repeat(10)
-					{
+					repeat(10) {
 						arg2[| index++] = buffer_read(buff,buffer_u8);
 					}
 					index = 0;
-					repeat(10)
-					{
+					repeat(10) {
 						arg3[| index++] = buffer_read(buff,buffer_u8);
 					}
 					random_set_seed(seed);
@@ -104,11 +96,9 @@ switch(type)
 				}
 			break;
 			case("online_lobby"):
-				if(connected == false)
-				{
+				if(connected == false) {
 					var new_ip = async_load[? "ip"];
-					if(ds_list_find_index(list_connect_ips,new_ip) == -1)
-					{
+					if(ds_list_find_index(list_connect_ips,new_ip) == -1) {
 						ds_list_add(list_connect_ips,new_ip);
 						var buff = async_load[? "buffer"];
 						var new_server = buffer_read(buff,buffer_string);
@@ -125,7 +115,7 @@ switch(type)
 			break;
 			case("char_select"):
 				var buff = async_load[? "buffer"];
-				global.p1_playing = buffer_read(buff,buffer_u8);
+				//global.p1_playing = buffer_read(buff,buffer_u8);
 				room_restart();
 			break;
 			case(""):
@@ -134,5 +124,5 @@ switch(type)
 			break;
 		}
 	break;
->>>>>>> master
+}
 }
