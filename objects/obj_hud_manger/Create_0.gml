@@ -1,0 +1,21 @@
+instance_create_depth(10,global.offset+900,0,obj_button_end_turn);
+instance_create_depth(10,global.offset+840,0,obj_button_open_inv);
+instance_create_depth(0,0,0,obj_inventory_manger);
+
+x1 = 105;
+x2 = 55;
+x3 = 155;
+x4 = x2 - 15;
+y1 = global.offset+80;
+y2 = global.offset+150;
+//width1 = 74;
+width2 = 90;
+//h1 = sprite_get_height(spr_cur_player_box);
+h2 = 15;
+text1 = "Player 1";
+text2 = "Player 2";
+text3 = "Player 3";
+text4 = "";
+var grid = global.grid_players;
+var g_y = ds_grid_value_y(grid,0,0,0,ds_grid_height(grid),obj_display_manager.follow);
+text4 = grid[# 1,g_y];

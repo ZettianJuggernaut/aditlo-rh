@@ -1,0 +1,440 @@
+
+skeleton.png
+size: 512,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+RHart, CharPiece, FrontShadow copy
+  rotate: false
+  xy: 2, 19
+  size: 31, 43
+  orig: 31, 43
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, BackArmLeft
+  rotate: true
+  xy: 23, 6
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, BackArmLeftHold
+  rotate: false
+  xy: 208, 22
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, CharPiece, JohnBase, BackArmRight
+  rotate: true
+  xy: 196, 23
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, BackArmRightHold
+  rotate: false
+  xy: 175, 6
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, CharPiece, JohnBase, BackBody
+  rotate: false
+  xy: 2, 2
+  size: 19, 15
+  orig: 23, 20
+  offset: 2, 3
+  index: -1
+RHart, CharPiece, JohnBase, BackFootLeft
+  rotate: true
+  xy: 503, 56
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, BackFootRight
+  rotate: true
+  xy: 503, 48
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, BackHead2
+  rotate: false
+  xy: 105, 36
+  size: 33, 26
+  orig: 35, 35
+  offset: 1, 0
+  index: -1
+RHart, CharPiece, MarianBase, BackArmLeft
+  rotate: false
+  xy: 208, 33
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, MarianBase, BackArmLeftHold
+  rotate: true
+  xy: 221, 32
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, CharPiece, MarianBase, BackArmRight
+  rotate: false
+  xy: 334, 52
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, MarianBase, BackArmRightHold
+  rotate: false
+  xy: 232, 35
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, CharPiece, MarianBase, BackBody
+  rotate: false
+  xy: 250, 47
+  size: 19, 15
+  orig: 23, 20
+  offset: 2, 3
+  index: -1
+RHart, CharPiece, MarianBase, BackFootLeft
+  rotate: false
+  xy: 451, 43
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, MarianBase, BackFootRight
+  rotate: false
+  xy: 459, 43
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, MarianBase, BackHead
+  rotate: false
+  xy: 35, 32
+  size: 33, 30
+  orig: 35, 35
+  offset: 1, 0
+  index: -1
+RHart, CharPiece, RobinBase, BackArmLeft
+  rotate: false
+  xy: 347, 52
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, BackArmLeftHold
+  rotate: false
+  xy: 221, 21
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, CharPiece, RobinBase, BackArmRight
+  rotate: false
+  xy: 360, 52
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, BackArmRightHold
+  rotate: true
+  xy: 234, 22
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, CharPiece, RobinBase, BackBody
+  rotate: false
+  xy: 271, 47
+  size: 19, 15
+  orig: 23, 20
+  offset: 2, 3
+  index: -1
+RHart, CharPiece, RobinBase, BackFootLeft
+  rotate: false
+  xy: 467, 43
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, BackFootRight
+  rotate: false
+  xy: 475, 43
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, BackHat
+  rotate: false
+  xy: 175, 36
+  size: 31, 26
+  orig: 31, 26
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, BackHead2
+  rotate: false
+  xy: 105, 8
+  size: 33, 26
+  orig: 35, 35
+  offset: 1, 0
+  index: -1
+RHart, EnemyPiece, Bandit, BackArmLeft
+  rotate: false
+  xy: 373, 52
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Bandit, BackArmLeftHold
+  rotate: false
+  xy: 188, 6
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, Bandit, BackArmRight
+  rotate: false
+  xy: 386, 52
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Bandit, BackArmRightHold
+  rotate: false
+  xy: 334, 41
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, Bandit, BackBody
+  rotate: false
+  xy: 292, 47
+  size: 19, 15
+  orig: 23, 20
+  offset: 2, 3
+  index: -1
+RHart, EnemyPiece, Bandit, BackFootLeft
+  rotate: false
+  xy: 483, 43
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Bandit, BackFootRight
+  rotate: false
+  xy: 491, 43
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Bandit, BackHead2
+  rotate: false
+  xy: 140, 36
+  size: 33, 26
+  orig: 35, 35
+  offset: 1, 0
+  index: -1
+RHart, EnemyPiece, MadMan, BackArmLeft
+  rotate: false
+  xy: 399, 52
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, MadMan, BackArmLeftHold
+  rotate: false
+  xy: 347, 41
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, MadMan, BackArmRight
+  rotate: false
+  xy: 412, 52
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, MadMan, BackArmRightHold
+  rotate: false
+  xy: 360, 41
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, MadMan, BackBody
+  rotate: false
+  xy: 175, 17
+  size: 19, 17
+  orig: 23, 20
+  offset: 2, 1
+  index: -1
+RHart, EnemyPiece, MadMan, BackFootLeft
+  rotate: false
+  xy: 245, 37
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, MadMan, BackFootRight
+  rotate: false
+  xy: 245, 28
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, MadMan, BackHead2
+  rotate: false
+  xy: 35, 2
+  size: 33, 28
+  orig: 35, 35
+  offset: 1, 0
+  index: -1
+RHart, EnemyPiece, Savage, BackArmLeft
+  rotate: false
+  xy: 425, 52
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Savage, BackArmLeftHold
+  rotate: false
+  xy: 373, 41
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, Savage, BackArmRight
+  rotate: false
+  xy: 438, 52
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Savage, BackArmRightHold
+  rotate: false
+  xy: 386, 41
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, EnemyPiece, Savage, BackBody
+  rotate: false
+  xy: 208, 45
+  size: 19, 17
+  orig: 23, 20
+  offset: 2, 1
+  index: -1
+RHart, EnemyPiece, Savage, BackFootLeft
+  rotate: false
+  xy: 253, 38
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Savage, BackFootRight
+  rotate: false
+  xy: 261, 38
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+RHart, EnemyPiece, Savage, BackHead2
+  rotate: false
+  xy: 70, 34
+  size: 33, 28
+  orig: 35, 35
+  offset: 1, 0
+  index: -1
+RHart, NPCPiece, Commoner1, BackArmLeft
+  rotate: false
+  xy: 451, 52
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, NPCPiece, Commoner1, BackArmLeftHold
+  rotate: false
+  xy: 399, 41
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, NPCPiece, Commoner1, BackArmRight
+  rotate: false
+  xy: 464, 52
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, NPCPiece, Commoner1, BackArmRightHold
+  rotate: false
+  xy: 412, 41
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, NPCPiece, Commoner1, BackBody
+  rotate: false
+  xy: 313, 47
+  size: 19, 15
+  orig: 23, 20
+  offset: 2, 3
+  index: -1
+RHart, NPCPiece, Commoner1, BackHead
+  rotate: false
+  xy: 70, 5
+  size: 33, 27
+  orig: 35, 35
+  offset: 1, 0
+  index: -1
+RHart, NPCPiece, Commoner2, BackArmLeft
+  rotate: false
+  xy: 477, 52
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, NPCPiece, Commoner2, BackArmLeftHold
+  rotate: false
+  xy: 425, 41
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, NPCPiece, Commoner2, BackArmRight
+  rotate: false
+  xy: 490, 52
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+RHart, NPCPiece, Commoner2, BackArmRightHold
+  rotate: false
+  xy: 438, 41
+  size: 11, 9
+  orig: 11, 10
+  offset: 0, 1
+  index: -1
+RHart, NPCPiece, Commoner2, BackBody
+  rotate: false
+  xy: 229, 46
+  size: 19, 16
+  orig: 23, 20
+  offset: 2, 2
+  index: -1
+RHart, NPCPiece, Commoner2, BackHead
+  rotate: false
+  xy: 140, 9
+  size: 33, 25
+  orig: 35, 35
+  offset: 1, 0
+  index: -1

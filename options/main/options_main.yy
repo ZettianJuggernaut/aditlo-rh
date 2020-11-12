@@ -1,0 +1,16 @@
+{
+  "option_gameguid": "1729f4be-5d7d-4d0e-a69a-a9786aedd5d7",
+  "option_game_speed": 60,
+  "option_mips_for_3d_textures": false,
+  "option_draw_colour": 4294967295,
+  "option_window_colour": 255,
+  "option_steam_app_id": "0",
+  "option_sci_usesci": true,
+  "option_author": "Nathan J.C.",
+  "option_lastchanged": "31 October 2020 12:50:50",
+  "option_spine_licence": true,
+  "resourceVersion": "1.2",
+  "name": "Main",
+  "tags": [],
+  "resourceType": "GMMainOptions",
+}
