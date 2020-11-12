@@ -1,0 +1,111 @@
+
+skeleton.png
+size: 128,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+RHart, CharPiece, FrontShadow
+  rotate: false
+  xy: 2, 19
+  size: 31, 43
+  orig: 31, 43
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, FrontArmLeft
+  rotate: false
+  xy: 23, 7
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, FrontArmRight
+  rotate: false
+  xy: 105, 29
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, FrontBody
+  rotate: false
+  xy: 2, 3
+  size: 19, 14
+  orig: 19, 14
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, FrontFootLeft
+  rotate: false
+  xy: 117, 31
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, FrontFootRight
+  rotate: false
+  xy: 94, 23
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, JohnBase, FrontHead
+  rotate: false
+  xy: 35, 30
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, ArmLeft
+  rotate: false
+  xy: 70, 21
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, ArmRight
+  rotate: false
+  xy: 82, 21
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, Body
+  rotate: false
+  xy: 105, 48
+  size: 19, 14
+  orig: 19, 14
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, Eyelids
+  rotate: false
+  xy: 105, 41
+  size: 19, 5
+  orig: 19, 5
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, FootLeft
+  rotate: false
+  xy: 68, 11
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, FootRight
+  rotate: true
+  xy: 68, 2
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, Hat
+  rotate: false
+  xy: 35, 2
+  size: 31, 26
+  orig: 31, 26
+  offset: 0, 0
+  index: -1
+RHart, CharPiece, RobinBase, Head
+  rotate: false
+  xy: 70, 33
+  size: 33, 29
+  orig: 33, 29
+  offset: 0, 0
+  index: -1
