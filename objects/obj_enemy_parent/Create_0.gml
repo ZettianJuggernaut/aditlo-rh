@@ -2,6 +2,7 @@ event_inherited();
 
 path_current = 1;
 path_dir = 1;
+spr_vis = spr_vis_closed;
 
 //Stats
 s_health_max = 10;

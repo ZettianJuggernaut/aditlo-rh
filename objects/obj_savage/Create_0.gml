@@ -14,7 +14,7 @@ skeleton_skin_set(skin);
 
 //Inventory
 var i_spr = spr_item_staff1;
-var starting_item = inv_item_create("Staff","Weapon",i_spr,"Blunt.",1,0,0,2,2,1,0,0,0,2,1);
+var starting_item = inv_item_create("Staff","Weapon",i_spr,"Blunt.",1,0,0,3,3,-2,0,0,0,1,-2);
 
 inv_item_add(inventory,starting_item,1,1,i_spr);
 inventory[# 4,0] = choose("RightWeaponSlot","LeftWeaponSlot");

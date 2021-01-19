@@ -21,14 +21,16 @@ enum s_inventory {
 	slot_id = 0,
 	slot_sum = 1,
 	slot_cap = 2,
-	slot_spr = 3
+	slot_spr = 3,
+	slot_equip = 4
 }
 enum actions {
 	skip,
 	move = 1,
 	attack = 3,
 	search = 5,
-	pick_item = 6
+	pick_item = 6,
+	speak = 7
 }
 enum ai_state {
 	idle,
@@ -36,6 +38,12 @@ enum ai_state {
 	alert,
 	attack
 }
+
+//Item Randomizion
+inv_item_create_common("Seeds","Consumable",3,9,spr_item_seed,"Useful?");
+inv_item_create_common("Berries","Consumable",3,9,spr_item_berries,"Like Blueberries.");
+inv_item_create_common("Leaves","Consumable",3,9,spr_item_leaves,"For making wings!");
+inv_item_create_common("Mushroom","Consumable",3,9,spr_item_mushroom,"Amazing!");
 
 //Temp vars
 var tile_setup, tile_mod = 8;
@@ -127,38 +135,16 @@ for(var ddown = 0; ddown < global.tile_height; ddown++) {
 					tilemap_set(collision0,5,across+tile_mod,ddown+tile_mod);
 					switch(irandom(1)) {
 						case(0):
-							//item_n = inv_item_create("Wood Shield","Shield",spr_item_shield,"Good for blocking.",0,0,0,0,irandom_range(3,5),0,0,0,0,0);
-							item_n = inv_item_create("Wood Shield","Shield",spr_item_shield,"Good for blocking.",1,2,0,0,1,2,0,0,0,0,0);
+							item_n = inv_item_create("Wood Shield","Shield",spr_item_shield,"Good for blocking.",1,1,0,0,-1,4,0,0,0,0,0);
 							break;
 						case(1):
-							//item_n = inv_item_create("Bow","Weapon",spr_item_bow1,"Ranger's Choice.",1,0,0,1,1,-1,1,0,irandom_range(1,2),0,-1);
-							item_n = inv_item_create("Bow","Weapon",spr_item_bow1,"Ranger's Choice.",1,0,0,2,2,1,2,0,2,0,1);
+							item_n = inv_item_create("Bow","Weapon",spr_item_bow1,"Ranger's Choice.",1,0,0,1,1,-1,1,0,3,0,-1);
 							break;
 					}
 				break;
 			}
 			tilemap_set(search0,tile_setup,across+tile_mod,ddown+tile_mod);
 			ds_grid_set(global.grid_tiling_layer0_search,across,ddown,item_n);
-			/*tile_setup = tilemap_get(search0,across+tile_mod,ddown+tile_mod);
-			switch(tile_setup) {
-				case(1):
-				case(2):
-					item_n = choose(0,"item1","item2","item3","item4");
-				break;
-				case(3):
-					item_n = choose(0,"item1","item2","item3","item4");
-				break;
-				case(4):
-					switch(irandom(1)) {
-						case(0):
-							item_n = inv_item_create("Wood Shield","Shield",spr_item_shield,"Good for blocking.",0,0,0,0,irandom_range(3,5),0,0,0,0,0);
-							break;
-						case(1):
-							item_n = inv_item_create("Bow","Weapon",spr_item_bow1,"Ranger's Choice.",0,0,1,1,-1,1,0,irandom_range(1,2),0,-1);
-							break;
-					}
-				break;
-			}*/
 		}
 	
 		//Ruins
@@ -254,10 +240,10 @@ for(var ddown = 0; ddown < global.tile_height; ddown++) {
 					tilemap_set(collision1,5,across+tile_mod,ddown+tile_mod);
 					switch(irandom(1)) {
 						case(0):
-							item_n = inv_item_create("Wood Shield","Shield",spr_item_shield,"Good for blocking.",0,0,0,0,irandom_range(3,5),0,0,0,0,0);
+							item_n = inv_item_create("Wood Shield","Shield",spr_item_shield,"Good for blocking.",1,1,0,0,-1,4,0,0,0,0,0);
 							break;
 						case(1):
-							item_n = inv_item_create("Bow","Weapon",spr_item_bow1,"Ranger's Choice.",0,0,1,1,-1,1,0,irandom_range(1,2),0,-1);
+							item_n = inv_item_create("Bow","Weapon",spr_item_bow1,"Ranger's Choice.",1,0,0,1,1,-1,1,0,3,0,-1);
 							break;
 					}
 				break;

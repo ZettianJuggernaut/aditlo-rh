@@ -22,11 +22,11 @@ function gen_world(world_n, list_chunks_large, list_chunks_medium, list_chunks_s
 	global.grid_trees_layer1 = ds_grid_create(world_width,world_height);
 	global.grid_tiling_layer2 = ds_grid_create(world_width,world_height);
 
-	var search0 = global.grid_tiling_layer0_search;
-	var search1 = global.grid_tiling_layer1_search;
+	//var search0 = global.grid_tiling_layer0_search;
+	//var search1 = global.grid_tiling_layer1_search;
 	var enemy_path = global.grid_tiling_layer_enemy_path;
 	var enemy0 = global.grid_tiling_layer0_enemy_spawn;
-	var enemy1 = global.grid_tiling_layer1_enemy_spawn;
+	//var enemy1 = global.grid_tiling_layer1_enemy_spawn;
 	var xx = 0, yy = 0, n = 1;
 	var frame = rm_game_test;
 	var index = 0;
@@ -94,17 +94,22 @@ function gen_world(world_n, list_chunks_large, list_chunks_medium, list_chunks_s
 			chunk_create(12,list_chunks_large[| index++],26,17);
 		#endregion
 		
+		//Player and Sign Spawn
+		if(enter_point == 1) {	
+			ds_grid_set(enemy0,40,13,p1);
+			ds_grid_set(enemy0,40,14,obj_enter_sign); //Enter
+			ds_grid_set(enemy0,1,30,obj_exit_sign);
+			//ds_grid_set(enemy0,40,14,p2);
+			//ds_grid_set(enemy0,40,12,p3);
+		}
+		else {
+			ds_grid_set(enemy0,0,29,p1);
+			ds_grid_set(enemy0,40,14,obj_exit_sign);
+			ds_grid_set(enemy0,1,30,obj_enter_sign); //Enter
+			//ds_grid_set(enemy0,0,28,p2);
+			//ds_grid_set(enemy0,0,27,p3);
+		}
 		#region Enemy Spawn/Path
-			if(enter_point == 1) {	
-				ds_grid_set(enemy0,40,13,p1);
-				//ds_grid_set(enemy0,40,14,p2);
-				//ds_grid_set(enemy0,40,12,p3);
-			}
-			else {
-				ds_grid_set(enemy0,0,29,p1);
-				//ds_grid_set(enemy0,0,28,p2);
-				//ds_grid_set(enemy0,0,27,p3);
-			}
 			/*ds_grid_set(enemy0,19,3,obj_bandit);
 			ds_grid_set(enemy0,30,0,obj_mad_man);
 			ds_grid_set(enemy0,2,6,obj_savage);
@@ -196,13 +201,13 @@ function gen_world(world_n, list_chunks_large, list_chunks_medium, list_chunks_s
 				ds_grid_set(enemy_path,xx,yy++,n++);
 			}
 			ds_grid_set(enemy_path,xx,yy,n); //Path End
-			xx = 1; yy = 30; n = 1;
+			/*xx = 1; yy = 30; n = 1;
 			ds_grid_set(enemy0,xx,yy,obj_savage);
 			ds_grid_set(enemy_path,xx,yy--,n++);
 			repeat(5) {
 				ds_grid_set(enemy_path,xx++,yy,n++);
 			}
-			ds_grid_set(enemy_path,xx,yy,n); //Path End
+			ds_grid_set(enemy_path,xx,yy,n); //Path End*/
 			xx = 8; yy = 30; n = 1;
 			ds_grid_set(enemy0,xx,yy,obj_savage);
 			ds_grid_set(enemy_path,xx,yy++,n++);
@@ -254,17 +259,23 @@ function gen_world(world_n, list_chunks_large, list_chunks_medium, list_chunks_s
 			chunk_create(12,list_chunks_large[| index++],15,29);
 		#endregion
 		
+		//Player and Sign Spawn
+		if(enter_point == 1) {
+			ds_grid_set(enemy0,0,4,p1);
+			ds_grid_set(enemy0,0,5,obj_enter_sign); //Enter
+			ds_grid_set(enemy0,34,40,obj_exit_sign);
+			//ds_grid_set(enemy0,0,5,p2);
+			//ds_grid_set(enemy0,0,3,p3);
+		}
+		else {
+			ds_grid_set(enemy0,33,40,p1);
+			ds_grid_set(enemy0,0,5,obj_exit_sign);
+			ds_grid_set(enemy0,34,40,obj_enter_sign); //Enter
+			//ds_grid_set(enemy0,32,40,p2);
+			//ds_grid_set(enemy0,34,40,p3);
+		}
 		#region Enemy Spawn/Path
-			if(enter_point == 1) {
-				ds_grid_set(enemy0,0,4,p1);
-				//ds_grid_set(enemy0,0,5,p2);
-				//ds_grid_set(enemy0,0,3,p3);
-			}
-			else {
-				ds_grid_set(enemy0,33,40,p1);
-				//ds_grid_set(enemy0,32,40,p2);
-				//ds_grid_set(enemy0,34,40,p3);
-			}
+			
 		
 			xx = 19; yy = 3; n = 1;
 			ds_grid_set(enemy0,xx,yy,obj_savage);

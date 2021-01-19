@@ -15,7 +15,7 @@ skeleton_skin_set(skin);
 
 //Inventory
 var i_spr = spr_item_dagger1;
-var starting_item = inv_item_create("Dagger","Weapon",i_spr,"Assassin's favorite.",1,0,0,2,2,1,0,0,0,2,1);
+var starting_item = inv_item_create("Dagger","Weapon",i_spr,"Assassin's favorite.",1,0,-2,2,2,-2,0,0,0,2,-1);
 
 inv_item_add(inventory,starting_item,1,1,i_spr);
 inventory[# 4,0] = "s-hold-right";

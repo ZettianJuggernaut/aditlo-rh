@@ -50,21 +50,27 @@ else {
 							sprite_index = spr_icon_eye;
 						}
 					break;
+					case(6): //Search
+						if(range_need == 1)	{
+							with(instance_create_depth(x+x_mod,y+y_mod,-300,obj_action_icon))
+							sprite_index = spr_icon_speak;
+						}
+					break;
 				}
 			}
 		}
 		//Current Tile
-		switch(ds_grid_get(radar,4,4)) {
-			case(5):
-				with(instance_create_depth(x,y,-300,obj_action_icon)) sprite_index = spr_icon_eye;
-			break;
-			case(6):
-				with(instance_create_depth(x,y,-300,obj_action_icon)) sprite_index = spr_icon_hand;
-			break;
-			case(7):
+		if(ds_grid_get(radar,4,4) == 5) {
+			if(position_meeting(x,y,obj_drop_bag)) { //Both Searchable and Drop Bag
 				with(instance_create_depth(x,y,-300,obj_action_icon)) sprite_index = spr_icon_eye;
 				with(instance_create_depth(x,y,-300,obj_action_icon)) sprite_index = spr_icon_hand;
-			break;
+			}
+			else { //Just a Searchable
+				with(instance_create_depth(x,y,-300,obj_action_icon)) sprite_index = spr_icon_eye;
+			}
+		}
+		else if(position_meeting(x,y,obj_drop_bag)) { //Just a Drop Bag
+			with(instance_create_depth(x,y,-300,obj_action_icon)) sprite_index = spr_icon_hand;
 		}
 	}
 }

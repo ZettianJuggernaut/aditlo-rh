@@ -23,16 +23,6 @@ function radar_search(grid,friendly,enemy) {
 		}
 	}
 	if(ds_grid_get(search_map,floor(x/64),floor(y/64)) != 0) {
-		tile_setup = 5;
+		ds_grid_set(grid,4,4,5);;
 	}
-	//Pick Upables
-	if(position_meeting(x,y,obj_drop_bag)) {
-		if(tile_setup == 5) {
-			tile_setup = 7;
-		}
-		else {
-			tile_setup = 6;
-		}
-	}
-	ds_grid_set(grid,4,4,tile_setup);
 }

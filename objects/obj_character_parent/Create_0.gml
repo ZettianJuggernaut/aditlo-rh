@@ -2,7 +2,7 @@ event_inherited();
 
 //Stats
 s_health_max = 40;
-s_health = 40;
+s_health = s_health_max;
 s_speed = 5;
 s_agility = 5;
 s_strength = 5;

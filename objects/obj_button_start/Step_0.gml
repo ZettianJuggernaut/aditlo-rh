@@ -64,18 +64,18 @@ if(tapped(x,width,y,height)) {
 			n = n2;
 		}
 	ini_close();
-	/*ini_open("item_info.ini");
+	ini_open("item_info.ini");
 		var item_id = "item1",
 		n = "1",
 		n2;
 		while(ini_section_exists(item_id)) {
-			ini_write(item_id);
+			ini_section_delete(item_id);
 			n2 = real(n);
 			n2++;
 			n2 = string(n2);
 			item_id = string_replace(item_id,n,n2);
 			n = n2;
 		}
-	ini_close();*/
+	ini_close();
 	room_goto(goto_room);
 }

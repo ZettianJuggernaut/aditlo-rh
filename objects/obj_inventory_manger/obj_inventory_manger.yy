@@ -20,7 +20,6 @@
   "eventList": [
     {"isDnD":false,"eventNum":74,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_inventory_manger","path":"objects/obj_inventory_manger/obj_inventory_manger.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_inventory_manger","path":"objects/obj_inventory_manger/obj_inventory_manger.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_inventory_manger","path":"objects/obj_inventory_manger/obj_inventory_manger.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_inventory_manger","path":"objects/obj_inventory_manger/obj_inventory_manger.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":11,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_inventory_manger","path":"objects/obj_inventory_manger/obj_inventory_manger.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],

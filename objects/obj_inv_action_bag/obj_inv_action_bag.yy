@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "In-Game",
-    "path": "folders/Objects/In-Game.yy",
+    "name": "Inventory",
+    "path": "folders/Objects/In-Game/Inventory.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_inv_action_bag",

@@ -1,46 +1,124 @@
-if(device_mouse_check_button_released(0,mb_left)) {
-	instance_destroy(obj_inv_action);
-	var clicked = instance_position(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0),object_index);
+if(device_mouse_check_button_pressed(0,mb_left)) {
+	if(position_meeting(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0),id)) held++
+}
+else if(device_mouse_check_button_released(0,mb_left)) {
+	if(ix != x && iy != y) {
+		with(instance_position(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0),object_index)) {
+			item_id = inv[# s_inventory.slot_id,slot_y];
+			var sum = inv[# s_inventory.slot_sum,slot_y],
+			cap = inv[# s_inventory.slot_cap,slot_y];
+			if(item_id == 0) {
+				ds_grid_add_grid_region(inv,other.inv,0,other.slot_y,s_inventory.width,other.slot_y,0,slot_y);
+				other.inv[# s_inventory.slot_sum,other.slot_y] = 0;
+			}
+			else if(sum < cap){
+				var add = clamp(other.inv[# s_inventory.slot_sum,other.slot_y],0,cap-sum);
+				inv[# s_inventory.slot_sum,slot_y] += add;
+				other.inv[# s_inventory.slot_sum,other.slot_y] -= add;
+			}
+		}
+		if(inv[# s_inventory.slot_sum,slot_y] < 1) {
+			ds_grid_set_region(inv,0,slot_y,s_inventory.width,slot_y,0);
+		}
+		held = 0;
+		ix = x;
+		iy = y;
+		if(instance_exists(obj_inv_pickup)) {
+			obj_inv_pickup.used = true;
+		}
+	}
+	var clicked = position_meeting(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0),id);
 	if(clicked) {
-		with(clicked) {
-			var item_id = current_following.inventory[# s_inventory.slot_id,slot_y];
-			if(item_id != 0) {
-				if(inv_item_unique(item_id)) var ini_file = "item_info_u.ini";
-				else var ini_file = "item_info.ini";
-				ini_open(ini_file);
-					var item_type = ini_read_string(item_id,"type",noone);
-					var equipped = ini_read_real(item_id,"equipped",0);
-				ini_close();
-				switch(item_type) {
-					case(0):
-						//Emtpy
-					break;
-					case("Weapon"):
-					case("Shield"):
-					case("Brace"):
-						if(!equipped) {
-							with(instance_create_depth(x,y,0,obj_inv_action)) {
-								sprite_index = spr_inv_action_equip;
+		instance_destroy(obj_inv_button);
+		var item_id = inv[# s_inventory.slot_id,slot_y];
+		if(item_id != 0) {
+			if(inv_item_unique(item_id)) {
+				var ini_file = "item_info_u.ini";
+			}
+			else {
+				var ini_file = "item_info.ini";
+			}
+			ini_open(ini_file);
+				var item_type = ini_read_string(item_id,"type",noone);
+				var equipped = ini_read_real(item_id,"equipped",0);
+			ini_close();
+			if(inv_text.inv_visible == false) {
+				if(item_type == "Consumable") {
+					item_consume(item_id,current_following,slot_y);
+				}
+			} else {
+				with(inv_text) {
+				i_id = -1;
+				text_stat = "";
+				text_desc = "";
+				text_name = "";
+				}
+				if(inv_text == obj_inventory_manger) {
+					switch(item_type) {
+						case(0):
+							//Emtpy
+						break;
+						case("Weapon"):
+						case("Shield"):
+						case("Brace"):
+							if(equipped) {
+								with(instance_create_depth(inv_text.x-40,inv_text.y-60,0,obj_inv_button)) {
+									text = "Unequip";
+								}
 							}
+							with(instance_create_depth(inv_text.x+50,inv_text.y-60,0,obj_inv_button)) {
+								text = "Left";
+							}
+							with(instance_create_depth(inv_text.x+140,inv_text.y-60,0,obj_inv_button)) {
+								text = "Right";
+							}
+						break;
+						case("Consumable"):
+							with(instance_create_depth(inv_text.x+140,inv_text.y-60,0,obj_inv_button)) {
+								text = "Consume";
+							}
+						break;
 					}
-				
-					case("Consumable"):
-				
-					default:
-						with(instance_create_depth(x,y,0,obj_inv_action)) {
-							sprite_index = spr_inv_action_drop;
+					with(instance_create_depth(inv_text.x-140,inv_text.y-60,0,obj_inv_button)) {
+						text = "Drop";
+					}
+					with(obj_inv_button) {
+						slot_y = other.slot_y;
+						character = other.current_following;
+					}
+				} else {
+					with(instance_create_depth(x,y,0,obj_inv_action_bag)) {
+						sprite_index = spr_inv_action_pickup;
+					}
+					if(inv[# s_inventory.slot_sum,slot_y] > 1) {
+						with(instance_create_depth(x,y,0,obj_inv_action_bag)) {
+							sprite_index = spr_inv_action_pickup_all;
 						}
+					}
+					with(obj_inv_action_bag) {
+						slot_y = other.slot_y;
+						inv_from = other.inv;
+						inv_to = other.current_following.inventory;
+						bag = other.inv_text.bag;
+					}
 				}
-				with(obj_inv_action) {
-					slot_y = other.slot_y;
-					character = other.current_following;
-				}
-				with(obj_inventory_manger) {
-					text_stat = "";
+				with(inv_text) {
 					i_id = item_id;
 					event_user(1);
 				}
 			}
 		}
+	}
+}
+else if(device_mouse_check_button(0,mb_left)) {
+	var clicked = position_meeting(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0),id);
+	if(clicked) {
+		if(held > 0) {
+			held++;
+		}
+	}
+	if(held > 30) {
+		ix = device_mouse_x_to_gui(0);
+		iy = device_mouse_y_to_gui(0);
 	}
 }

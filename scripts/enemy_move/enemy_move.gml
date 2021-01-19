@@ -9,7 +9,7 @@ function enemy_move() {
 	var path_y = (y/64)-0.5;
 	var on_path = false;
 
-	if(play_vis_check(id,close_player)) {
+	if(spr_vis == spr_vis_open) {
 		move_dir = point_direction(x,y,close_player.x,close_player.y);
 	}
 	else if(ds_grid_get(paths,path_x,path_y) > 0) {

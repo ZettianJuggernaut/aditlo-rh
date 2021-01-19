@@ -1,8 +1,8 @@
 /// @description
 
 //Display
-inv_x = x+50;
-inv_y = y+110;
+/*inv_x = x+50;
+inv_y = y+110;*/
 width = 340;
 height = 290;
 
@@ -16,13 +16,15 @@ tb_x = x+220;
 tb_y = y+20;
 tb_width = 100;
 tb_height = 250;
-text = "";
-
-slot_id = 0;
-slot_sum = 1;
-slot_cap = 2;
-slot_spr = 3;
+//text = "";
+i_id = -1;
+text_name = "";
+text_desc = "";
+text_stat = "";
 
 inventory = noone;
 bag = noone;
 used = false;
+inv_visible = true;
+
+alarm[0] = 1;
